@@ -2,8 +2,6 @@
 
 RoomMatch is a mobile-first roommate matching application designed for university students, international students, and young professionals searching for shared accommodation.
 
-## Overview
-
 Many accommodation platforms focus primarily on finding available rooms and properties. However, successful shared living depends not only on the accommodation itself, but also on the compatibility of the people living together. Differences in lifestyle habits, communication styles, budgets, cleanliness expectations, and household routines can often lead to conflict after moving in.
 
 RoomMatch was developed to address this challenge by combining practical housing preferences with lifestyle-based matching. The application helps users identify compatible roommates before committing to a shared living arrangement, creating a more transparent and informed housing experience.
