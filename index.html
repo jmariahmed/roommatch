@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RoomMatch</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="app-shell">
+    <div class="phone">
+
+      <!-- WELCOME -->
+      <section class="screen active" id="welcome-screen">
+        <div class="topbar">
+          <div class="brand">
+            <div class="brand-mark">R</div>
+            <div>
+              <div class="brand-name">RoomMatch</div>
+              <div class="brand-sub">Lifestyle-based matching</div>
+            </div>
+          </div>
+          <button class="icon-btn" id="aboutBtn" aria-label="About RoomMatch">i</button>
+        </div>
+
+        <div class="hero-card glass-card">
+          <div class="eyebrow">Built for students + young professionals</div>
+          <h1>Find roommates who actually fit your lifestyle.</h1>
+          <p>
+            Match on habits, budgets, move-in timing, pets, and house expectations — not just location and price.
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>5+</strong>
+              <span>Match factors</span>
+            </div>
+            <div class="stat">
+              <strong>Uni / Work</strong>
+              <span>Verified</span>
+            </div>
+            <div class="stat">
+              <strong>Chat</strong>
+              <span>Before moving in</span>
+            </div>
+          </div>
+
+          <div class="cta-stack">
+            <button class="primary-btn" data-go="profile-screen">Get started</button>
+          </div>
+        </div>
+
+        <div class="mini-panel glass-card">
+          <div class="panel-title">Why students use RoomMatch</div>
+
+          <div class="benefits-grid">
+            <div class="benefit">
+              <div class="benefit-icon">⚡</div>
+              <div>
+                <strong>Save time</strong>
+                <span>Find compatible roommates faster</span>
+              </div>
+            </div>
+
+            <div class="benefit">
+              <div class="benefit-icon">🎯</div>
+              <div>
+                <strong>Better matches</strong>
+                <span>Based on lifestyle compatibility</span>
+              </div>
+            </div>
+
+            <div class="benefit">
+              <div class="benefit-icon">🏡</div>
+              <div>
+                <strong>Fewer conflicts</strong>
+                <span>Set expectations before moving in</span>
+              </div>
+            </div>
+
+            <div class="benefit">
+              <div class="benefit-icon">💬</div>
+              <div>
+                <strong>Connect early</strong>
+                <span>Chat before committing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROFILE -->
+      <section class="screen" id="profile-screen">
+        <div class="topbar">
+          <button class="icon-btn" data-back="welcome-screen" aria-label="Back">←</button>
+          <div class="page-title">
+            <div class="page-name">Create profile</div>
+            <div class="page-sub">Step 1 of 4</div>
+          </div>
+          <button class="icon-btn ghost" aria-hidden="true"></button>
+        </div>
+
+        <div class="glass-card content-card">
+          <h2>Tell us the basics</h2>
+          <p>Keep it short — this is just enough to start matching people properly.</p>
+
+          <div class="field">
+            <label for="nameInput">Full name</label>
+            <input id="nameInput" type="text" placeholder="Maria Ahmed">
+          </div>
+
+          <div class="row">
+            <div class="field">
+              <label for="roleInput">Status</label>
+              <select id="roleInput">
+                <option>University student</option>
+                <option>International student</option>
+                <option>Young professional</option>
+              </select>
+            </div>
+
+            <div class="field">
+              <label for="cityInput">City</label>
+              <input id="cityInput" type="text" placeholder="London">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="bioInput">Short bio</label>
+            <textarea id="bioInput" placeholder="Clean, easygoing, and looking for a calm home with clear house rules."></textarea>
+          </div>
+
+          <button class="primary-btn" id="profileBtn">Continue</button>
+        </div>
+      </section>
+
+      <!-- LOGISTICS -->
+      <section class="screen" id="logistics-screen">
+        <div class="topbar">
+          <button class="icon-btn" data-back="profile-screen" aria-label="Back">←</button>
+          <div class="page-title">
+            <div class="page-name">Housing preferences</div>
+            <div class="page-sub">Step 2 of 4</div>
+          </div>
+          <button class="icon-btn ghost" aria-hidden="true"></button>
+        </div>
+
+        <div class="glass-card content-card">
+          <h2>Match on the practical stuff</h2>
+          <p>These filters help you find someone who fits your living setup faster.</p>
+
+          <div class="field">
+            <label for="genderPreference">Gender preference</label>
+            <select id="genderPreference">
+              <option value="" selected disabled>Select one</option>
+              <option>No preference</option>
+              <option>Female only</option>
+              <option>Male only</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="budgetPreference">Budget</label>
+            <select id="budgetPreference">
+              <option value="" selected disabled>Select one</option>
+              <option>Under £600</option>
+              <option>£600-£900</option>
+              <option>£900-£1200</option>
+              <option>£1200+</option>
+              <option>Flexible</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="moveInPreference">Move-in month</label>
+            <select id="moveInPreference">
+              <option value="" selected disabled>Select one</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>Flexible</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="petsPreference">Pets</label>
+            <select id="petsPreference">
+              <option value="" selected disabled>Select one</option>
+              <option>Love pets</option>
+              <option>Okay with pets</option>
+              <option>No pets</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="locationPreference">Location preference</label>
+            <select id="locationPreference">
+              <option value="" selected disabled>Select one</option>
+              <option>Central</option>
+              <option>Near campus</option>
+              <option>Suburban</option>
+              <option>Flexible</option>
+            </select>
+          </div>
+
+          <button class="primary-btn" id="logisticsBtn">Continue</button>
+        </div>
+      </section>
+
+      <!-- QUIZ -->
+      <section class="screen" id="quiz-screen">
+        <div class="topbar">
+          <button class="icon-btn" data-back="logistics-screen" aria-label="Back">←</button>
+          <div class="page-title">
+            <div class="page-name">Lifestyle quiz</div>
+            <div class="page-sub">Step 3 of 4</div>
+          </div>
+          <button class="icon-btn" id="resetQuizBtn" aria-label="Reset quiz">↺</button>
+        </div>
+
+        <div class="progress-shell" aria-hidden="true">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="quiz-count" id="quizCount">Question 1 of 5</div>
+
+        <div class="glass-card content-card quiz-card">
+          <h2 id="quizQuestion">Are you an early bird or a night owl?</h2>
+          <p id="quizHelper">This helps match people with similar routines and less friction at home.</p>
+
+          <div class="answer-stack" id="answersWrap"></div>
+        </div>
+      </section>
+
+      <!-- RESULTS -->
+      <section class="screen" id="results-screen">
+        <div class="topbar">
+          <button class="icon-btn" data-back="quiz-screen" aria-label="Back">←</button>
+          <div class="page-title">
+            <div class="page-name">Your matches</div>
+            <div class="page-sub" id="batchLabel">Batch 1</div>
+          </div>
+          <button class="icon-btn" id="refreshMatchesBtn" aria-label="Refresh matches">↻</button>
+        </div>
+
+        <div class="glass-card summary-card">
+          <div>
+            <div class="summary-label">Your profile</div>
+            <div class="summary-name" id="summaryName">Maria Ahmed</div>
+            <div class="summary-meta" id="summaryMeta">University student · London</div>
+          </div>
+          <div class="score-ring">
+            <div class="score-value" id="bestScoreValue">96%</div>
+          </div>
+        </div>
+
+        <div class="results-head">
+          <div class="section-label">Top 5 matches</div>
+          <div class="batch-pill">Refresh to see more</div>
+        </div>
+
+        <div class="match-list" id="matchList"></div>
+
+        <button class="primary-btn" data-go="agreement-screen">Create house agreement</button>
+      </section>
+
+      <!-- ROOMMATE PROFILE -->
+      <section class="screen" id="roommate-screen">
+        <div class="topbar">
+          <button class="icon-btn" data-back="results-screen" aria-label="Back">←</button>
+          <div class="page-title">
+            <div class="page-name">Roommate profile</div>
+            <div class="page-sub">Preview before you message</div>
+          </div>
+          <button class="icon-btn" data-go="chat-screen" aria-label="Chat">💬</button>
+        </div>
+
+        <div class="glass-card profile-card">
+          <div class="profile-top">
+            <div class="avatar" id="roommateAvatar">A</div>
+            <div class="profile-copy">
+              <div class="profile-name" id="roommateName">Aisha Khan</div>
+              <div class="profile-meta" id="roommateMeta">Postgraduate student · Manchester</div>
+            </div>
+            <div class="mini-score" id="roommateScore">96%</div>
+          </div>
+
+          <div class="tag-row" id="matchReasonRow"></div>
+
+          <div class="details-grid">
+            <div class="detail-box">
+              <span>Gender</span>
+              <strong id="genderDetail">Female</strong>
+            </div>
+            <div class="detail-box">
+              <span>Budget</span>
+              <strong id="budgetDetail">£600-£900</strong>
+            </div>
+            <div class="detail-box">
+              <span>Move-in</span>
+              <strong id="moveInDetail">September</strong>
+            </div>
+            <div class="detail-box">
+              <span>Location</span>
+              <strong id="locationDetail">Near campus</strong>
+            </div>
+          </div>
+
+          <div class="section-label" style="margin-top:6px;">Compatibility breakdown</div>
+          <div class="breakdown-list" id="compatibilityBreakdown"></div>
+
+          <div class="field">
+            <label>Bio</label>
+            <textarea id="roommateBio" readonly></textarea>
+          </div>
+
+          <div class="button-row">
+            <button class="secondary-btn" data-go="results-screen">Back to matches</button>
+            <button class="primary-btn" data-go="chat-screen">Message</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CHAT -->
+      <section class="screen" id="chat-screen">
+        <div class="topbar">
+          <button class="icon-btn" data-back="roommate-screen" aria-label="Back">←</button>
+          <div class="page-title">
+            <div class="page-name" id="chatTitle">Chat</div>
+            <div class="page-sub">Replying fast</div>
+          </div>
+          <button class="icon-btn" data-go="agreement-screen" aria-label="Agreement">☑</button>
+        </div>
+
+        <div class="glass-card chat-card">
+          <div class="profile-top compact">
+            <div class="avatar small" id="chatAvatar">A</div>
+            <div class="profile-copy">
+              <div class="profile-name" id="chatName">Aisha Khan</div>
+              <div class="profile-meta">Online now</div>
+            </div>
+          </div>
+
+          <div class="chat-thread" id="chatThread">
+            <div class="bubble them">Hey! Your profile looks really similar to mine.</div>
+            <div class="bubble me">That’s a good sign already.</div>
+            <div class="bubble them">Definitely. I like a calm home and clean shared spaces.</div>
+          </div>
+
+          <div class="chat-compose">
+            <input id="chatInput" type="text" placeholder="Type a message...">
+            <button class="send-btn" id="sendBtn">➤</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- AGREEMENT -->
+      <section class="screen" id="agreement-screen">
+        <div class="topbar">
+          <button class="icon-btn" data-back="chat-screen" aria-label="Back">←</button>
+          <div class="page-title">
+            <div class="page-name">House agreement</div>
+            <div class="page-sub">Step 4 of 4</div>
+          </div>
+          <button class="icon-btn" data-go="success-screen" aria-label="Finish">✓</button>
+        </div>
+
+        <div class="glass-card content-card">
+          <div class="agreement-item">
+            <div>
+              <strong>Cleaning rota</strong>
+              <span>Weekly shared schedule</span>
+            </div>
+            <button class="toggle on" type="button" aria-label="Toggle cleaning rota"></button>
+          </div>
+
+          <div class="agreement-item">
+            <div>
+              <strong>Quiet hours</strong>
+              <span>11 pm – 8 am</span>
+            </div>
+            <button class="toggle on" type="button" aria-label="Toggle quiet hours"></button>
+          </div>
+
+          <div class="agreement-item">
+            <div>
+              <strong>Guests policy</strong>
+              <span>Notify before overnight guests</span>
+            </div>
+            <button class="toggle on" type="button" aria-label="Toggle guests policy"></button>
+          </div>
+
+          <div class="agreement-item">
+            <div>
+              <strong>Bills</strong>
+              <span>Split evenly with reminders</span>
+            </div>
+            <button class="toggle on" type="button" aria-label="Toggle bills"></button>
+          </div>
+
+          <div class="field">
+            <label for="notesInput">Shared notes</label>
+            <textarea id="notesInput" placeholder="Anything else you both want to agree on?"></textarea>
+          </div>
+
+          <div class="button-row">
+            <button class="secondary-btn" data-go="chat-screen">Back to chat</button>
+            <button class="primary-btn" data-go="success-screen">Lock it in</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SUCCESS -->
+      <section class="screen" id="success-screen">
+        <div class="topbar">
+          <button class="icon-btn" data-back="agreement-screen" aria-label="Back">←</button>
+          <div class="page-title">
+            <div class="page-name">Match secured</div>
+            <div class="page-sub">Ready to move forward</div>
+          </div>
+          <button class="icon-btn" data-go="welcome-screen" aria-label="Home">⌂</button>
+        </div>
+
+        <div class="glass-card success-card">
+          <div class="success-mark">✓</div>
+          <h2>You found a match.</h2>
+          <p>RoomMatch makes moving in feel calmer, safer, and more compatible from day one.</p>
+
+          <div class="tag-row center">
+            <span class="tag accent">5+ match factors</span>
+            <span class="tag">Verified profiles</span>
+            <span class="tag">Clear house rules</span>
+          </div>
+
+          <button class="primary-btn" data-go="results-screen">View matches again</button>
+        </div>
+      </section>
+
+    </div>
+  </main>
+</body>
+</html>
