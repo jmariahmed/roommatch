@@ -1,65 +1,70 @@
 # RoomMatch
 
-RoomMatch is a mobile-first roommate matching prototype designed for university students, international students, and young professionals who are looking for compatible shared accommodation.
+RoomMatch is a mobile-first roommate matching application designed for university students, international students, and young professionals searching for shared accommodation.
 
-The project responds to a common problem in modern housing searches: many platforms help people find rooms, but very few help them assess whether the people living together will actually be a good match. RoomMatch focuses on both practical housing preferences and lifestyle compatibility, helping users make more informed decisions before moving in.
+## Overview
 
-## Project Overview
+Many accommodation platforms focus primarily on finding available rooms and properties. However, successful shared living depends not only on the accommodation itself, but also on the compatibility of the people living together. Differences in lifestyle habits, communication styles, budgets, cleanliness expectations, and household routines can often lead to conflict after moving in.
 
-RoomMatch was developed as part of an App Development portfolio exploring how mobile applications can support a specific community. The project is based on the idea that shared living is not only about finding a place to stay, but also about finding people whose habits, expectations, and routines align.
+RoomMatch was developed to address this challenge by combining practical housing preferences with lifestyle-based matching. The application helps users identify compatible roommates before committing to a shared living arrangement, creating a more transparent and informed housing experience.
 
-The application includes profile creation, housing preference matching, a lifestyle compatibility quiz, ranked roommate recommendations, compatibility breakdowns, chat functionality, and a house agreement feature. Together, these features create a more realistic and transparent roommate selection process.
+## Project Aim
 
-## Community Focus
+The aim of this project was to design and develop a mobile application that helps students, international students, and young professionals find compatible roommates before moving into shared accommodation.
 
-The target community for RoomMatch is made up of students, international students, and young professionals who are relocating and need to find shared accommodation. This community often faces challenges such as trust, differing cleanliness standards, conflicting routines, budget mismatches, and unclear expectations before moving in.
+## Community
 
-RoomMatch was shaped by this context and by the need for a more compatibility-led alternative to cluttered, listing-heavy housing platforms.
+The project focuses on a community of students, international students, and young professionals who are relocating to new cities and searching for shared housing. Research identified several common challenges within this community, including trust concerns, differing lifestyle expectations, communication difficulties, financial disagreements, and uncertainty surrounding potential roommates.
 
-## Key Features
+RoomMatch was designed to address these challenges through compatibility-focused matching and early communication between users.
 
-RoomMatch includes a guided onboarding flow, a profile creation screen, a housing preferences screen, a lifestyle compatibility quiz, ranked match results, a detailed roommate profile view, chat, and a house agreement tool. The app also includes visual compatibility breakdowns to help users understand why matches were recommended.
+## Features
 
-A major part of the design was making the product feel realistic rather than like a demo. For that reason, the app combines practical filters such as gender preference, budget, move-in month, pets, and location with lifestyle factors such as cleanliness, sleep schedules, guests, and household expectations.
+The application includes:
 
-## Design Approach
+* User profile creation
+* Housing preference matching
+* Lifestyle compatibility quiz
+* Compatibility scoring
+* Match recommendations
+* Compatibility breakdowns
+* Chat functionality
+* House agreement feature
+* Mobile-first user interface
 
-The UI was designed to feel modern, calm, and trustworthy, with a mobile-first layout and a clean visual hierarchy. The final interface uses rounded cards, soft gradients, progress indicators, and simple navigation to create a polished experience that feels appropriate for a young adult audience.
+The matching process considers both practical and behavioural factors, including budget, location preferences, move-in dates, pet preferences, cleanliness, sleep schedules, guest preferences, and household expectations.
 
-The design process included initial concept exploration, low-fidelity wireframes created in Figma, design development, user testing, and iteration. The final prototype reflects that process and shows how the app evolved from a simple idea into a more complete roommate-matching experience.
+## Design Process
 
-## Technologies Used
+The project followed an iterative design process involving research, competitor analysis, concept development, wireframing, prototyping, user testing, and design refinement.
 
-RoomMatch was built using:
+Initial research highlighted a gap in the market for a platform focused on roommate compatibility rather than property listings alone. This insight informed the development of RoomMatch and shaped the final feature set.
 
-- HTML
-- CSS
-- JavaScript
+Low-fidelity wireframes were created in Figma to explore navigation, onboarding, matching, communication, and house agreement functionality before development. Feedback gathered during testing informed several design iterations, including the addition of logistics-based matching, compatibility breakdowns, move-in date matching, and verification concepts.
 
-The prototype is front-end only and is intended to demonstrate the user journey, interface design, and interaction flow rather than a production-ready backend system.
+## Technical Implementation
 
-## Running the Project Locally
+RoomMatch was built using HTML, CSS, and JavaScript.
 
-To run RoomMatch locally, open the project folder in Visual Studio Code or another code editor and launch `index.html` in a browser. Live Server can also be used for a smoother development experience.
+The application was developed as a responsive front-end prototype and focuses on demonstrating the complete roommate matching journey, from onboarding and preference collection to compatibility scoring and communication. JavaScript is used to manage interactions, navigation, and matching functionality, while CSS provides a modern mobile-first user experience.
 
-## Project Links
+## Live Project
 
-Live project: [RoomMatch live demo](https://jmariahmed.github.io/roommatch/)
+Live Demo:
+https://jmariahmed.github.io/roommatch/
 
-GitHub repository: [RoomMatch GitHub](https://github.com/jmariahmed/roommatch/)
-
-## Portfolio and Process
-
-The full design process, research, wireframes, user testing, iterations, and final prototype screenshots are documented in the accompanying portfolio. The portfolio explains how the project developed from the early concept stage into the final RoomMatch prototype.
-
-## References
-
-The project was informed by research into roommate compatibility, shared living, trust, communication, and community belonging. Key academic references are documented in the portfolio submission and include sources by Fidan and Erdem, Cao et al., Gan et al., Pattnaik et al., McMillan and Chavis, Norman, Putnam, Astin, and Tinto.
+GitHub Repository:
+https://github.com/jmariahmed/roommatch/
 
 ## Future Development
 
-If RoomMatch were developed further, future versions could include verified accounts, database storage, real-time messaging, saved favourites, AI-assisted matching, and broader accommodation search features.
+Future versions of RoomMatch could include user authentication, university and workplace email verification, database integration, real-time messaging, saved favourites, AI-assisted compatibility matching, and property listing integration.
+
+These developments would transform the prototype into a fully functional platform capable of supporting real users while maintaining its core focus on compatibility and positive shared living experiences.
 
 ## Author
 
 Jafrin Maria Ahmed
+
+University of the Arts London
+Application Development Studio
